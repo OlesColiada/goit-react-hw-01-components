@@ -1,0 +1,29 @@
+.transactionContainer{
+    margin-bottom: 80px;
+}
+
+.tableHeadCell {
+    padding: 15px 100px;
+    background-color: rgb(63, 214, 248);
+    font-size: 20px;
+    color: white;
+}
+.lightStyle{
+    background-color:rgb(244, 252, 10);
+    color:  white;
+    text-align: center;
+    font-size: 18px;
+    padding: 10px 0 10px 0;
+}
+
+.grayStyle {
+    background-color:rgb(167, 167, 167);
+    color:  white;
+    text-align: center;
+    font-size: 18px;
+    padding: 10px 0 10px 0;
+}
+
+.cellTrans {
+    padding: 10px 0;
+}
