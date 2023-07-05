@@ -1,16 +1,3 @@
-.friendListContainer {
-    width: auto;
-    height: auto;
-}
-
-.friendsList {
-    list-style-type: none;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding: 0;
-}
-
 .itemFriend {
     width: 300px;
     height: 100px;
@@ -30,6 +17,7 @@
     background-color:  green;
     border-radius: 50%;
 }
+
 
 .Offline {
     width: 18px;

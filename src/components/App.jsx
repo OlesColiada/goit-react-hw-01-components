@@ -1,7 +1,7 @@
 import styles from './App.module.css'
 import {Profile} from './Profile/profile'
 import {Statistics} from './Statistics/Statistics'
-import {FriendList} from './FriendList/FriendList'
+import { FriendsList } from './FriendsList/FriendsList'
 import {TransactionHistory} from './Transaction/Transaction'
 import user from '../data/user.json'
 import statistic from '../data/data.json';
@@ -22,7 +22,7 @@ export const App = () => {
       <Statistics
         title ="upload stats"
         stats = {statistic}/>
-      <FriendList
+      <FriendsList
         friends={friends}/>
       <TransactionHistory
        items = {transaction}/>
