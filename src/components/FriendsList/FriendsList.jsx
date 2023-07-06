@@ -1,5 +1,6 @@
 import styles from './FriendsList.module.css'
 import {FriendsListItem} from './FriendsListItem/FriendsListItem'
+import PropTypes from 'prop-types'
 
 export const FriendsList = ({friends}) => {
     return (
@@ -7,7 +8,6 @@ export const FriendsList = ({friends}) => {
             <ul className={styles.friendsList}>
                 {friends.map(friend=>(
                     <FriendsListItem
-                    id={friend.id}
                     avatar={friend.avatar}
                     key={friend.id}
                     isOnline = {friend.isOnline}
@@ -16,4 +16,23 @@ export const FriendsList = ({friends}) => {
             </ul>
         </div>
     )
+}
+
+// FriendsList.propTypes = {
+//     friends: PropTypes.array(
+//         PropTypes.object({
+//             id: PropTypes.number
+//         }).isRequired
+//     )
+// }
+
+FriendsList.propTypes = {
+    friends: PropTypes.arrayOf(
+        PropTypes.shape({
+            id: PropTypes.number.isRequired,
+            avatar: PropTypes.string.isRequired,
+            isOnline: PropTypes.bool.isRequired,
+            name: PropTypes.string.isRequired,
+        })
+    ).isRequired,
 }
